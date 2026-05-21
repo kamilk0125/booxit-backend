@@ -29,6 +29,7 @@ doctrine:
                 EARTH_POINT: App\Repository\ORM\Functions\EarthPoint
                 EARTH_BOX_CONTAINS: App\Repository\ORM\Functions\EarthBoxContains
                 EARTH_DISTANCE: App\Repository\ORM\Functions\EarthDistance
+                CUBE_CONTAINS: App\Repository\ORM\Functions\CubeContains
 
 when@test:
     doctrine:
