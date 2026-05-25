@@ -4,6 +4,7 @@ namespace App\Entity\Embeddable;
 
 use App\Enum\NormalizerGroup;
 use App\Repository\Filter\EntityFilter\FieldValue;
+use App\Repository\Filter\EntityFilter\LocationAreaFilter;
 use App\Repository\Filter\EntityFilter\LocationRadiusFilter;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Serializer\Attribute\Groups;
@@ -155,6 +156,7 @@ class Address
             'postalCode' => new FieldValue('postalCode', '='),
             'country' => new FieldValue('country', '='),
             'location' => new LocationRadiusFilter(''),
+            'area' => new LocationAreaFilter('')
         ]);
     }
 }

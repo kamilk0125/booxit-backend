@@ -30,6 +30,8 @@ class AddressFiltersDTO extends ListFiltersDTO
         public readonly ?string $country = null,
         #[Assert\Valid]
         public readonly ?LocationRadiusFilterDTO $location = null,
+        #[Assert\Valid]
+        public readonly ?LocationAreaFilterDTO $area = null,
     )
     {
 

@@ -98,6 +98,25 @@ class OrganizationListDataProvider extends ListDataProvider
                 ],
             ],
             [
+                [   
+                    'address' => [
+                        'area' => [
+                            'sw_lat' => 50.12,
+                            'sw_lng' => 20.10,
+                            'ne_lat' => 50.15,
+                            'ne_lng' => 20.15,
+                            'radius' => 5
+                        ]
+                    ]
+                ],
+                [
+                    'address' => [
+                        'latitude' => 50.08,
+                        'longitude' => 20.05
+                    ]
+                ],
+            ],
+            [
                 [
                     'service_category' => [ServiceCategory::BUSINESS->value]
                 ],
@@ -142,7 +161,14 @@ class OrganizationListDataProvider extends ListDataProvider
                                     'lat' => -100,
                                     'lng' => -200,
                                     'radius' => 0
-                                ]
+                                ],
+                                'area' => [
+                                    'sw_lat' => -100,
+                                    'sw_lng' => -200,
+                                    'ne_lat' => -100,
+                                    'ne_lng' => -200,
+                                    'radius' => 0
+                                ],
                             ],
                             'service_category' => ['a'],
                         ]
@@ -178,6 +204,23 @@ class OrganizationListDataProvider extends ListDataProvider
                                     'radius' => [
                                         'This value should be between 1 and 100.',
                                     ],
+                                ],
+                                'area' => [
+                                    'sw_lat' => [
+                                        'This value should be between -90 and 90.',
+                                    ],
+                                    'sw_lng' => [
+                                        'This value should be between -180 and 180.',
+                                    ],
+                                    'ne_lat' => [
+                                        'This value should be between -90 and 90.',
+                                    ],
+                                    'ne_lng' => [
+                                        'This value should be between -180 and 180.',
+                                    ],
+                                    'radius' => [
+                                        'This value should be between 1 and 100.',
+                                    ],
                                 ]
                             ],
                             'service_category' => [
@@ -199,6 +242,13 @@ class OrganizationListDataProvider extends ListDataProvider
                                 'location' => [
                                     'lat' => 100,
                                     'lng' => 200,
+                                    'radius' => 101
+                                ],
+                                'area' => [
+                                    'sw_lat' => 100,
+                                    'sw_lng' => 200,
+                                    'ne_lat' => 100,
+                                    'ne_lng' => 200,
                                     'radius' => 101
                                 ]
                             ],
@@ -230,6 +280,23 @@ class OrganizationListDataProvider extends ListDataProvider
                                         'This value should be between -90 and 90.',
                                     ],
                                     'lng' => [
+                                        'This value should be between -180 and 180.',
+                                    ],
+                                    'radius' => [
+                                        'This value should be between 1 and 100.',
+                                    ],
+                                ],
+                                'area' => [
+                                    'sw_lat' => [
+                                        'This value should be between -90 and 90.',
+                                    ],
+                                    'sw_lng' => [
+                                        'This value should be between -180 and 180.',
+                                    ],
+                                    'ne_lat' => [
+                                        'This value should be between -90 and 90.',
+                                    ],
+                                    'ne_lng' => [
                                         'This value should be between -180 and 180.',
                                     ],
                                     'radius' => [
